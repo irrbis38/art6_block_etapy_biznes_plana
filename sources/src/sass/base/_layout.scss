@@ -11,12 +11,12 @@
 
 /*===== global styles =====*/
 
-// *,
-// *::before,
-// *::after {
-//     box-sizing: border-box;
-//     // min-height: 0.001vw; // — Fixes Safari bug with viewport units in calc()
-// }
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  // min-height: 0.001vw; // — Fixes Safari bug with viewport units in calc()
+}
 
 // html {
 //     min-width: 320px;
@@ -35,7 +35,7 @@ body {
   // -webkit-font-smoothing: antialiased;
   // -moz-osx-font-smoothing: grayscale;
   // color: #000;
-  // font-family: Arial, Helvetica, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   // font-weight: 400;
   // background-color: #fff;
 }
@@ -46,13 +46,9 @@ body {
 
 .container {
   width: 100%;
-  max-width: 1580px;
+  max-width: 1196px;
   margin: 0 auto;
-  padding: 0 40px;
-
-  @include xs {
-    padding: 0 20px;
-  }
+  padding: 0 20px;
 }
 
 // a {

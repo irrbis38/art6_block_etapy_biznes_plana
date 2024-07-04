@@ -27,10 +27,14 @@ block page
                 each item in stepsData
 
                     li.art6_block_etapy_biznes_plana__step
-                        .art6_block_etapy_biznes_plana__icon
-                            img(src= "./images/" + item.icon, alt="") 
+                        .art6_block_etapy_biznes_plana__top
+                            .art6_block_etapy_biznes_plana__icon
+                                img(src= "./images/" + item.icon, alt="") 
 
                         span.art6_block_etapy_biznes_plana__name= item.name
+
+            .art6_block_etapy_biznes_plana__bg 
+                +pictureSizeLazy('art6_block_etapy_biznes_plana_bg','png','x2',1150,382)
 
 
     
