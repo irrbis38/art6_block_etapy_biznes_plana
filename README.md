@@ -1,0 +1,1 @@
+## Block name: art6_block_etapy_biznes_plana

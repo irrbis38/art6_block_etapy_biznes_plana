@@ -1,0 +1,47 @@
+extends base/_layout
+block vars
+    - var pageName = 'index'
+block head
+    title Table Scroll Art6
+block page
+
+    .container
+
+        -
+            const stepsData = [
+                {icon: 'icon-1.svg', name: 'Заявка на сайте'},
+                {icon: 'icon-2.svg', name: 'Расширенная консультация'},
+                {icon: 'icon-3.svg', name: 'Заключение договора на разработку бизнес-плана'},
+                {icon: 'icon-4.svg', name: 'Лабораторные анализы грунта и воды'},
+                {icon: 'icon-5.svg', name: 'Подбор культур для выращивания'},
+                {icon: 'icon-6.svg', name: '3D проектирование инфраструктуры'},
+                {icon: 'icon-7.svg', name: 'Разработка финансовой и управленческой стратегии'},
+                {icon: 'icon-8.svg', name: 'Презентация и защита бизнес-плана'},
+            ]
+
+        .art6_block_etapy_biznes_plana
+            h2.art6_block_etapy_biznes_plana__title Этапы составления бизнес-плана
+
+            ul.art6_block_etapy_biznes_plana__list 
+
+                each item in stepsData
+
+                    li.art6_block_etapy_biznes_plana__step
+                        .art6_block_etapy_biznes_plana__icon
+                            img(src= "./images/" + item.icon, alt="") 
+
+                        span.art6_block_etapy_biznes_plana__name= item.name
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
