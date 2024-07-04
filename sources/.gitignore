@@ -30,3 +30,5 @@ Thumbs.db
 
 # bundler
 html
+sources
+package-lock.json
