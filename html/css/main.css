@@ -82,7 +82,8 @@ body {
 }
 @media (max-width:767px) {
   .art6_block_etapy_biznes_plana__list {
-    display: block;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
     max-width: 568px;
     margin: 0 auto 40px
   }
@@ -102,9 +103,6 @@ body {
   color: rgba(125,165,67,.1)
 }
 @media (max-width:767px) {
-  .art6_block_etapy_biznes_plana__step:not(:last-child) {
-    margin-bottom: 20px
-  }
   .art6_block_etapy_biznes_plana__step::before {
     font-size: 110px
   }
@@ -147,6 +145,11 @@ body {
 @media (max-width:767px) {
   .art6_block_etapy_biznes_plana__name {
     font-size: 18px
+  }
+}
+@media (max-width:575px) {
+  .art6_block_etapy_biznes_plana__name {
+    font-size: 16px
   }
 }
 .art6_block_etapy_biznes_plana__bg img {
